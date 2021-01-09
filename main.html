@@ -14,20 +14,52 @@
 <p id="description">Thank you for taking your time to fill up you interest in Programming Languages.</p>
 <form id="survey-form">
 
-    <label id="name-label">Name</label> </br>
+    <label id="name-label">Name</label> 
     <input type="text" id="name" name="name" placeholder="Name" required></br>
-    <label id="email-label">Email</label></br>
+    <label id="email-label">Email</label>
     <input type="email" id="email" name="email" placeholder="Email" required></br>
-    <label id="number-label">Age</label></br>
+    <label id="number-label">Age</label>
     <input type="number" id="number" name="age"  placeholder="Age" min="10" max="100" required></br>
-    <label id="dropdown-label">Pick programming language </label></br>
-    <select name="language" id="dropdown">
-        <option value="c">C</option>
-        <option value="python">Python</option>
-        <option value="csharp">C#</option>
-        <option value="sql">SQL</option>
-    </select>
-    
+    <div class="grouping">
+        <label id="dropdown-label">Pick programming language </label></br>
+        <select name="language" id="dropdown">
+            <option value="c">C</option>
+            <option value="python">Python</option>
+            <option value="csharp">C#</option>
+            <option value="sql">SQL</option>
+        </select>
+    </div>
+
+    <div class="grouping">
+        <input type="radio" id="bubble" name="algo" value="bubbleSort">
+            <label for="bubbleSort">bubbleSort</label><br>
+        <input type="radio" id="merge" name="algo" value="mergeSort">
+        <label for="mergeSort">mergeSort</label><br>
+        <input type="radio" id="heapSort" name="algo" value="heapSort">
+        <label for="heapSort">heapSort</label>
+    </div>
+
+    <div class="grouping">
+        <input type="checkbox" name="agileMethod" value="agile">
+            <label>Agile methology</label><br>
+        <input type="checkbox" name="devopsMethod" value="devops">
+        <label>Devops methology</label><br>
+        <input type="checkbox" name="waterfallMethod" value="waterfall">
+        <label>Waterfall methology</label><br>
+    </div>
+
+    <div class="grouping">
+        <p>Comment:</p>
+        <textarea id="comments" name="comment" >
+        Input any opinion or comment about your experience as software developer.
+        </textarea>
+    </div>
+
+    <div class="grouping">
+        <button type="submit" id="submit" class="submit-button">
+            Submit
+        </button>
+    </div>
 </form>
 </body>    
 </html>
